@@ -1,5 +1,8 @@
 tags:
-  - tag1
+  - tictactoe
+  - loops
+  - while
+  - cli
 languages:
-  - language1
+  - ruby
 resources: 0
