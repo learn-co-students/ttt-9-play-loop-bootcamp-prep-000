@@ -97,6 +97,6 @@ Remember that when you see a number in this sample output it represents user inp
 
 ### Conclusion
 
-Once you get all the tests passing, your `#play` loop should be looking pretty good. There are however two issues with it. First, the turns do not switch between "X" and "O" tokens. Second, the game does not terminate after a player wins. Take a moment and brainstorm––what are some ways in which we cant tell our game to switch tokens according to whose turn it is? How can we determine if and when a certain player has won?
+Once you get all the tests passing, your `#play` loop should be looking pretty good. There are however two issues with it. First, the turns do not switch between "X" and "O" tokens. Second, the game does not terminate after a player wins. Take a moment and brainstorm––what are some ways in which we can tell our game to switch tokens according to whose turn it is? How can we determine if and when a certain player has won?
 
 We'll be building all of these functionalities soon, this is just food for thought for now. 
