@@ -14,7 +14,7 @@ In this lab you're going to build a `#play` method for Tic Tac Toe that initiate
 
 ### Part I: Understanding the Helper Methods in `lib/play.rb`
 
-Several helper methods have been provided that represent the logic required for a turn of tic tac toe. This includes `#display_board`, `#move`, `#position_taken?`, `#valid_move?`, and `#turn`. You should read the code in that file and try to understand how these methods work and come together in the `#turn` method to represent a turn of tic tac toe with move validation.
+Several helper methods have been provided that represent the logic required for a turn of tic tac toe. This includes `#display_board`, `#move`, `#position_taken?`, `#valid_move?`, and `#turn`. You should read the code in that file and try to understand how these methods work to all come together in the `#turn` method to represent a turn of tic tac toe with move validation.
 
 There are no tests for these methods and if they stop working as they do currently, your lab will break because your `#play` method will depend upon a functioning `#turn` method. Edit these methods at your own risk.
 
