@@ -46,7 +46,7 @@ The `#play` method should:
 
 A few things to think about:
 
-* What constitutes a rousing game of tic tac toe? Do the two players simply keep filling out squares forever and ever? Definitely not. Eventually the game must end. In fact, there are only 9 spots on a tic tac toe board, so there are only 9 turns to be placed. Account for this in the loops that your `#play` methods contains. 
+* What constitutes a rousing game of tic tac toe? Do the two players simply keep filling out squares forever and ever? Definitely not. Eventually the game must end. In fact, there are only 9 spots on a tic tac toe board, so there are only 9 turns to be placed. Account for this in the loops that your `#play` method contains. 
 * Which looping construct (`while`, `until`, etc) you use doesn't really matter. What does matter is how and when you terminate the loop. You don't want to get stuck in an infinite loop when you execute your `bin/play` file or when you run the tests through `learn` or `rspec`. You'll notice you're in an infinite loop if you run the test or bin and it never terminates or "hangs" - if you do get stuck, just type `control` + `c` to terminate the test.
 
 As you code and try to get the tests to pass, play with your CLI and make sure that it is looping, that it is allowing you to play multiple turns of Tic Tac Toe, even if they are unrealistic according to the rules of the game (we'll move on to working out who wins the game in a later exercise). 
@@ -100,5 +100,3 @@ Remember that when you see a number in this sample output it represents user inp
 Once you get all the tests passing, your `#play` loop should be looking pretty good. There are however two issues with it. First, the turns do not switch between "X" and "O" tokens. Second, the game does not terminate after a player wins. Take a moment and brainstorm––what are some ways in which we cant tell our game to switch tokens according to whose turn it is? How can we determine if and when a certain player has won?
 
 We'll be building all of these functionalities soon, this is just food for thought for now. 
-
-<a href='https://learn.co/lessons/ttt-9-play-loop' data-visibility='hidden'>View this lesson on Learn.co</a>
