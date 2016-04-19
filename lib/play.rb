@@ -24,10 +24,10 @@ def turn(board)
   input = gets.strip
   if valid_move?(board, input)
     move(board, input)
+    display_board(board)
   else
     turn(board)
   end
-  display_board(board)
 end
 
 # Define your play method below
