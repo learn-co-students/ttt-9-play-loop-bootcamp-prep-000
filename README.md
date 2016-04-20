@@ -14,7 +14,7 @@ In this lab you're going to build a `#play` method for Tic Tac Toe that initiate
 
 ### Part I: Understanding the Helper Methods in `lib/play.rb`
 
-Several helper methods have been provided that represent the logic required for a turn of tic tac toe. This includes `#display_board`, `#move`, `#position_taken?`, `#valid_move?`, and `#turn`. You should read the code in that file and try to understand how these methods work to all come together in the `#turn` method to represent a turn of tic tac toe with move validation.
+You'll notice that we've already added some helper methods for you in here that you have yourself created in previous labs. Take a look at our code and notice how it's probably different than how you wrote those methods. Isn't it cool how there are so many ways to write the same method? Now try to understand how these methods work to all come together in the `#turn` method to represent a turn of tic tac toe with move validation.
 
 There are no tests for these methods and if they stop working as they do currently, your lab will break because your `#play` method will depend upon a functioning `#turn` method. Edit these methods at your own risk.
 
@@ -46,10 +46,10 @@ The `#play` method should:
 
 A few things to think about:
 
-* What constitutes a rousing game of tic tac toe? Do the two players simply keep filling out squares forever and ever? Definitely not. Eventually the game must end. In fact, there are only 9 spots on a tic tac toe board, so there are only 9 turns to be placed. Account for this in the loops that your `#play` method contains. 
+* What constitutes a rousing game of tic tac toe? Do the two players simply keep filling out squares forever and ever? Definitely not. Eventually the game must end. In fact, there are only 9 spots on a tic tac toe board, so there are only 9 turns to be placed. Account for this in the loops that your `#play` method contains.
 * Which looping construct (`while`, `until`, etc) you use doesn't really matter. What does matter is how and when you terminate the loop. You don't want to get stuck in an infinite loop when you execute your `bin/play` file or when you run the tests through `learn` or `rspec`. You'll notice you're in an infinite loop if you run the test or bin and it never terminates or "hangs" - if you do get stuck, just type `control` + `c` to terminate the test.
 
-As you code and try to get the tests to pass, play with your CLI and make sure that it is looping, that it is allowing you to play multiple turns of Tic Tac Toe, even if they are unrealistic according to the rules of the game (we'll move on to working out who wins the game in a later exercise). 
+As you code and try to get the tests to pass, play with your CLI and make sure that it is looping, that it is allowing you to play multiple turns of Tic Tac Toe, even if they are unrealistic according to the rules of the game (we'll move on to working out who wins the game in a later exercise).
 
 A working `#play` method will produce a CLI that behaves as follows:
 
@@ -94,4 +94,7 @@ Remember that when you see a number in this sample output it represents user inp
 
 Once you get all the tests passing, your `#play` loop should be looking pretty good. There are however two issues with it. First, the turns do not switch between "X" and "O" tokens. Second, the game does not terminate after a player wins. Take a moment and brainstorm––what are some ways in which we can tell our game to switch tokens according to whose turn it is? How can we determine if and when a certain player has won?
 
-We'll be building all of these functionalities soon, this is just food for thought for now. 
+
+We'll be building all of these functionalities soon, this is just food for thought for now.
+
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/ttt-9-play-loop' title='Tic Tac Toe Play Loop'>Tic Tac Toe Play Loop</a> on Learn.co and start learning to code for free.</p>
