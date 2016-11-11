@@ -40,10 +40,6 @@ def play(board)
   valid_turns = 0
   while valid_turns < 9
     turn(board)
-    if true
-      valid_turns += 1
-    else
-      valid_turns
-    end
+    valid_turns += 1
   end
 end
