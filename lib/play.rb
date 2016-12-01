@@ -46,7 +46,7 @@ def play(board) #play method initiates a simple loop and calls #turn
 end #end play(board) method
 
 
-### while loop
+### while loop example:
 
 # num_of_hotdogs_eaten = 0
 # while num_of_hotdogs_eaten < 7
@@ -55,7 +55,7 @@ end #end play(board) method
 # end
 
 
-### until loop
+### until loop example:
 
 # counter = 0
 # until counter == 20
