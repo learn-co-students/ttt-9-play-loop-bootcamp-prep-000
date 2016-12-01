@@ -35,4 +35,30 @@ def turn(board)
   end
 end
 
+
 # Define your play method below
+
+#with until loop:::
+def play(board) #play method initiates a simple loop and calls #turn
+  until board == ["X","X","X","X","X","X","X","X","X",]
+    turn(board) #calls turn method
+  end #end while loop
+end #end play(board) method
+
+
+### while loop
+
+# num_of_hotdogs_eaten = 0
+# while num_of_hotdogs_eaten < 7
+#   num_of_hotdogs_eaten += 1
+#   puts "You have now eaten #{num_of_hotdogs_eaten} hot dog(s)."
+# end
+
+
+### until loop
+
+# counter = 0
+# until counter == 20
+#   puts "The current number is less than 20."
+#   counter += 1
+# end
