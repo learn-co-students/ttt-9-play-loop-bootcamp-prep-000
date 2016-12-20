@@ -35,4 +35,15 @@ def turn(board)
   end
 end
 
-# Define your play method below
+def play(board)
+  answer=nil
+  position=0
+
+  until answer==true || position >8
+    answer=board[position]!=" " && board[position]!="" && board[position]!=nil
+    position +=1
+    turn(board)
+  end
+end
+
+
