@@ -1,4 +1,6 @@
-# Helper Methods
+# Learn.co Bootcamp Prep - Ruby Fundamentals - 19: Tic Tac Toe Play Loop
+
+############################### HELPER METHODS ################################
 def display_board(board)
   puts " #{board[0]} | #{board[1]} | #{board[2]} "
   puts "-----------"
@@ -35,4 +37,15 @@ def turn(board)
   end
 end
 
-# Define your play method below
+###############################################################################
+
+# Define a method, 'play', that accepts one parameter(s):
+# 'board', an array that represents the current state of the game.
+# Simulate a 9 turn Tic Tac Toe game using a loop.
+def play(board)
+  turn_num = 0
+  until turn_num == 9
+    turn(board)
+    turn_num += 1
+  end
+end
