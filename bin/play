@@ -1,10 +1,16 @@
+# Learn.co Bootcamp Prep - Ruby Fundamentals - 19: Tic Tac Toe Play Loop
+
 #!/usr/bin/env ruby
 
+# Link to /lib/play.rb
 require_relative "../lib/play"
 
+# Initialise starting board
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 
+# Welcome the user and display the game board
 puts "Welcome to Tic Tac Toe!"
 display_board(board)
 
-# Make sure to execute #play below
+# Simulate the 9-turn game
+play(board)
