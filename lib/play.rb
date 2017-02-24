@@ -11,8 +11,10 @@ def turn(board)
   system('clear')
   index = input_to_index(input)
   while valid_move?(board, index) == false
+    display_board(board)
     puts "It is not possible to move to square #{input}"
     input = get_move
+    system('clear')
     index = input_to_index(input)
   end
   move(board, index)
