@@ -23,16 +23,29 @@ def valid_move?(board, index)
   index.between?(0,8) && !position_taken?(board, index)
 end
 
-def turn(board)
+def turn(board, current_player)
   puts "Please enter 1-9:"
   input = gets.strip
   index = input_to_index(input)
   if valid_move?(board, index)
-    move(board, index)
+    move(board, index, current_player)
     display_board(board)
   else
-    turn(board)
+    turn(board, current_player)
   end
+end
+
+def play(board)
+display_board(board)
+current_player = "O"
+9.times do |i|
+  if current_player == "X"
+    current_player = "X"
+  else
+    current_player = "X"
+  end
+  turn(board, current_player)
+end
 end
 
 # Define your play method below
