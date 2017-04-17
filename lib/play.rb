@@ -36,3 +36,15 @@ def turn(board)
 end
 
 # Define your play method below
+
+def play(board)
+  turn_counter = 0
+  loop do
+    turn(board)
+    turn_counter += 1
+    if turn_counter == 9
+      puts "Game Over!"
+      break
+    end
+  end
+end
