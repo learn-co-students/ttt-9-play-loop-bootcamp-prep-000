@@ -10,15 +10,3 @@ board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 
   # Make sure to execute #play below
   play(board)
-  
-
-  #puts "new game? (Y/N)"
-  #inputNewGame = gets.strip
-  #if (inputNewGame == "n" || inputNewGame == "N" || inputNewGame == "no" || inputNewGame == "No" || inputNewGame == "NO")
-  #  flag = false
-  #elsif (inputNewGame == "y" || inputNewGame == "Y" || inputNewGame == "yes" || inputNewGame == "Yes" || inputNewGame == "YES")
-  #  flag = true
-  #else
-  #  puts "Not recognised"
-  #  flag = false
-  #end
