@@ -36,6 +36,7 @@ def turn(board)
     move(board, index)
     display_board(board)
   else
+    puts "Invalid Move!"
     turn(board)
   end
 end
@@ -48,4 +49,5 @@ def play(board)
     turn(board)
     turn += 1
   end
+  puts "Game over!"
 end
