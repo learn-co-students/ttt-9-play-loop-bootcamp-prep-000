@@ -17,6 +17,7 @@ end
 
 def position_taken?(board, location)
   board[location] != " " && board[location] != ""
+  #logic by itself returns true or false
 end
 
 def valid_move?(board, index)
@@ -34,5 +35,14 @@ def turn(board)
     turn(board)
   end
 end
+
+def play(arr)
+  arr.each do
+    turn(arr)
+  end
+end
+
+# * Accept an argument of a `board`.
+# * Start a loop and call `#turn`.
 
 # Define your play method below
