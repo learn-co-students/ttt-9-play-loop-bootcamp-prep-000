@@ -1,5 +1,5 @@
 # Helper Methods
-def display_board(board)
+def displayBoard(board)
   puts " #{board[0]} | #{board[1]} | #{board[2]} "
   puts "-----------"
   puts " #{board[3]} | #{board[4]} | #{board[5]} "
@@ -7,32 +7,39 @@ def display_board(board)
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
-def input_to_index(user_input)
-  user_input.to_i - 1
+def inputIndex(input)
+  input.to_i - 1
 end
 
-def move(board, index, current_player = "X")
-  board[index] = current_player
+def move(board, index, currentPlayer = "X")
+  board[index] = currentPlayer
 end
 
-def position_taken?(board, location)
-  board[location] != " " && board[location] != ""
+def positionTaken?(board, position)
+  board[position] != " " && board[position] != ""
 end
 
-def valid_move?(board, index)
-  index.between?(0,8) && !position_taken?(board, index)
+def validMove?(board, index)
+  index.between?(0,8) && !positionTaken?(board, index)
 end
 
 def turn(board)
-  puts "Please enter 1-9:"
+  puts "Please enter a number from 1-9:"
   input = gets.strip
-  index = input_to_index(input)
-  if valid_move?(board, index)
+  index = inputIndex(input)
+  if validMove?(board, index)
     move(board, index)
-    display_board(board)
+    displayBoard(board)
   else
     turn(board)
   end
 end
 
 # Define your play method below
+def play(board)
+  turnNum = 0
+  while turnNum < 9
+    turn(board)
+    turnNum += 1
+  end
+end
