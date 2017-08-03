@@ -36,3 +36,17 @@ def turn(board)
 end
 
 # Define your play method below
+
+def play(board)
+
+  #set turn count variable (maximum of 9 turns)
+  turn_count = 1
+
+  # run play method until turn_count = 9
+  while turn_count <= 9
+  # take player turn
+    turn(board)
+  # increase counter by 1
+    turn_count += 1
+  end
+end
