@@ -31,8 +31,16 @@ def turn(board)
     move(board, index)
     display_board(board)
   else
+    puts "That is an invalid move. Try again."
     turn(board)
   end
 end
 
-# Define your play method below
+def play(board)
+  counter = 3
+  token =['X','O']
+  while (counter<12)
+    turn(board)
+    counter +=1
+  end
+end
