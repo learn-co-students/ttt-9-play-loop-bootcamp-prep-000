@@ -13,6 +13,7 @@ end
 
 def move(board, index, current_player = "X")
   board[index] = current_player
+  toggle_user(current_player)
 end
 
 def position_taken?(board, location)
@@ -21,6 +22,15 @@ end
 
 def valid_move?(board, index)
   index.between?(0,8) && !position_taken?(board, index)
+end
+
+def toggle_user(current_player)
+  if current_player = "X"
+    current_player = "O"
+  elsif current_player = "O"
+    current_player = "X"
+  end
+  return whos
 end
 
 def turn(board)
