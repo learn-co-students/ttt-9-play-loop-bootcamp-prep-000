@@ -13,7 +13,6 @@ end
 
 def move(board, index, current_player = "X")
   board[index] = current_player
-  toggle_user(current_player)
 end
 
 def position_taken?(board, location)
@@ -24,16 +23,9 @@ def valid_move?(board, index)
   index.between?(0,8) && !position_taken?(board, index)
 end
 
-def toggle_user(current_player)
-  if current_player = "X"
-    current_player = "O"
-  elsif current_player = "O"
-    current_player = "X"
-  end
-  return whos
-end
 
 def turn(board)
+  current_player = "X"
   puts "Please enter 1-9:"
   input = gets.strip
   index = input_to_index(input)
@@ -43,6 +35,7 @@ def turn(board)
   else
     turn(board)
   end
+
 end
 
 # Define your play method below
