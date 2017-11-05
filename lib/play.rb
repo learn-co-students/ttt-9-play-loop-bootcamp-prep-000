@@ -36,3 +36,10 @@ def turn(board)
 end
 
 # Define your play method below
+def play(a)
+  i=1
+  until i === 10
+    turn(a)
+    i+=1
+  end
+end
