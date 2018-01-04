@@ -27,12 +27,38 @@ def turn(board)
   puts "Please enter 1-9:"
   input = gets.strip
   index = input_to_index(input)
+
   if valid_move?(board, index)
     move(board, index)
-    display_board(board)
-  else
+  else 
     turn(board)
-  end
+  end 
 end
 
 # Define your play method below
+
+def play(board)
+  
+  9.times do
+    turn(board)
+  end 
+
+end
+
+# def won?(board)
+#   row0 = board[0..2]
+#   row1 = board[3..5]
+#   row2 = board[6..8]
+#   col0 = board[0], board[3], board[6]
+#   col1 = board[1], board[4], board[7]
+#   col2 = board[2], board[5], board[8]
+#   diag1 = board[0], board[4], board[8]
+#   diag2 = board[6], board[4], board[2]
+  
+#   possibles = [row0, row1, row2, col0, col1, col2, diag2, diag1]
+  
+#   possibles.each do |poss|
+#     return true if poss.flatten.uniq.length == 1 && poss.flatten.uniq != " "
+#   end 
+#   false 
+# end 
