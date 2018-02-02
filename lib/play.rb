@@ -35,4 +35,12 @@ def turn(board)
   end
 end
 
-# Define your play method below
+def play(board)
+  game_state = true
+  while game_state == true
+    turn(board)
+    if (board.count("X" || "O") == 9)
+      game_state = false
+    end
+  end
+end
