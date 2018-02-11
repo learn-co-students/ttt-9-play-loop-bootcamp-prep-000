@@ -31,7 +31,7 @@ Welcome to Tic Tac Toe!
    |   |   
 ```
 
-The CLI shows the start of the game but doesn't start playing the actual game. Your `#play` method will provide that logic. It'll be easier to code `#play` if you can actually use the CLI to see how your method changes the behavior of the game. Edit `bin/play` to include a call to `#play`, passing it the `board` as an argument. You can add that line to the `bin/play` CLI in advance of actually defining the `#play` method in `lib/play.rb`. If you try running your CLI now, you'll get a `NameError` about an undefined method `#play`, which is fine because that's what we're about to define.
+The CLI shows the start of the game but doesn't start playing the actual game. Your `#play` method will provide that logic. It'll be easier to code `#play` if you can actually use the CLI to see how your method changes the behavior of the game. Edit `bin/play` to include a call to `#play`, passing it the `board` as an argument. You can add that line to the `bin/play` CLI in advance of actually defining the `#play` method in `lib/play.rb`. If you try running your CLI now, you'll get a `NoMethodError` about an undefined method `#play`, which is fine because that's what we're about to define.
 
 You can make sure your CLI is working by running `learn spec/01_cli_spec.rb` or `rspec spec/01_cli_spec.rb`.
 
@@ -97,3 +97,5 @@ Once you get all the tests passing, your `#play` loop should be looking pretty g
 We'll be building all of these functionalities soon; for now, it's just food for thought.
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/ttt-9-play-loop' title='Tic Tac Toe Play Loop'>Tic Tac Toe Play Loop</a> on Learn.co and start learning to code for free.</p>
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/ttt-9-play-loop'>Tic Tac Toe Play Loop </a> on Learn.co and start learning to code for free.</p>
