@@ -8,8 +8,6 @@
 
 ## Overview
 
-HI Yon!!!
-
 In this lab you're going to build a `#play` method for Tic Tac Toe that initiates a simple loop and calls `#turn`. It won't function like a real game of Tic Tac Toe but instead as a very simplified version. Our `#play` method will initiate a loop that runs 9 times, simulating an entire game.
 
 ## Instructions
