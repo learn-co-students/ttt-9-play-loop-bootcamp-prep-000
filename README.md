@@ -97,5 +97,3 @@ Once you get all the tests passing, your `#play` loop should be looking pretty g
 We'll be building all of these functionalities soon; for now, it's just food for thought.
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/ttt-9-play-loop' title='Tic Tac Toe Play Loop'>Tic Tac Toe Play Loop</a> on Learn.co and start learning to code for free.</p>
-
-<p class='util--hide'>View <a href='https://learn.co/lessons/ttt-9-play-loop'>Tic Tac Toe Play Loop </a> on Learn.co and start learning to code for free.</p>
