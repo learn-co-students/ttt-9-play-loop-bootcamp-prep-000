@@ -35,7 +35,10 @@ def turn(board)
   end
 end
 
-until counter > 9
-  puts "Please enter 1-9:"
-  counter +=1
+def play(board)
+counter = 0
+until counter == 9
+  turn(board)
+  counter += 1
+end
 end
