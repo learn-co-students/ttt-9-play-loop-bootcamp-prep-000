@@ -19,7 +19,7 @@ def position_taken?(board, location)
   board[location] != " " && board[location] != ""
 end
 
-def valid_move?(board, index)
+def valid_move?(board, index) # this method validates if the input is between 1-9
   index.between?(0,8) && !position_taken?(board, index)
 end
 
@@ -34,5 +34,23 @@ def turn(board)
     turn(board)
   end
 end
-
 # Define your play method below
+
+def play(board)
+  for i in 0...9
+    turn(board)
+  end
+end 
+
+
+
+
+
+
+
+
+
+
+
+
+
