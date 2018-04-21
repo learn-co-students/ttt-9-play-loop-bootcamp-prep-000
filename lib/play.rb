@@ -31,8 +31,21 @@ def turn(board)
     move(board, index)
     display_board(board)
   else
+    puts " INVALID MOVE"
     turn(board)
   end
 end
 
 # Define your play method below
+def play(board)
+    counter = 0
+    loop do
+    turn(board)
+    counter += 1
+  if counter >=9
+    puts " GAME OVER "
+    break
+
+  end
+  end
+end
