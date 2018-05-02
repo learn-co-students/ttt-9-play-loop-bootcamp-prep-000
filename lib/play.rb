@@ -36,3 +36,10 @@ def turn(board)
 end
 
 # Define your play method below
+def play(board)
+  slots_left = 9
+  until slots_left == 0 do
+    turn(board)
+    slots_left -= 1
+  end
+end
