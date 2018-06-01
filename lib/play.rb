@@ -35,4 +35,10 @@ def turn(board)
   end
 end
 
-# Define your play method below
+def play(board)
+  spots_filled = 0
+  until spots_filled == 9
+  turn(board)
+  spots_filled += 1
+  end
+end
