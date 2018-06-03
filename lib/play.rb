@@ -36,3 +36,15 @@ def turn(board)
 end
 
 # Define your play method below
+# define play method for Tic Tac Toe that initiates a simple loop that runs 9 times and calls #turn
+#The #play method should:
+  #Accept an argument of a board.
+  #Start a loop and call #turn.
+  
+  def play(board)
+    counter = 1
+  	while counter < 10
+  	  turn(board)
+  	  counter += 1
+    end
+   end 
