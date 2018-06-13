@@ -11,4 +11,3 @@ display_board(board)
 
 play(["X", "X", "X", "X", "X", "X", "X", "X", "X"])
 
-display_board(board)
