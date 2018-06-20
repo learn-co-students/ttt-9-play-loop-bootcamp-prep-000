@@ -36,10 +36,10 @@ def turn(board)
 end
 
 def play(board)
-  turns_taken = 0 
+  #turns_taken = 0 
   
-  until turns_taken == 9
+  9.times do #until turns_taken == 9
     turn(board)
-    turns_taken += 1
+    #turns_taken += 1
   end
 end #Note: I could have done a regular "do" loop with "if" and "break", but it's longer.
