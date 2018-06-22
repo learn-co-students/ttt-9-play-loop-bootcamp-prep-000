@@ -36,3 +36,14 @@ def turn(board)
 end
 
 # Define your play method below
+def play(board)
+  complete = false
+  index = 0
+  until complete do
+    turn(board)
+    index += 1
+    if index > 8
+      break
+    end
+  end
+end
