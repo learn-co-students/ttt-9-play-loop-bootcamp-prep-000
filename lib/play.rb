@@ -35,4 +35,14 @@ def turn(board)
   end
 end
 
-# Define your play method below
+def play(board)
+  play_count = 8
+  
+  while play_count >= 0
+    turn(board)
+    play_count -= 1
+    puts play_count
+  end
+  
+  puts "Game Over"
+end
