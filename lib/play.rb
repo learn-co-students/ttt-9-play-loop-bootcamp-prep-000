@@ -7,8 +7,8 @@ def display_board(board)
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
-def input_to_index(user_input)
-  user_input.to_i - 1
+def input_to_index(input)
+  input.to_i - 1
 end
 
 def move(board, index, current_player = "X")
@@ -36,3 +36,8 @@ def turn(board)
 end
 
 # Define your play method below
+def play(board)
+  for x in 1..9 do
+    turn(board)
+  end
+end 
