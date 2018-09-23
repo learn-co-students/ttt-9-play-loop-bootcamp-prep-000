@@ -37,7 +37,8 @@ end
 
 # Define your play method below
 def play(board)
-  until board == ["X", "X", "X", "X", "X", "X", "X", "X", "X"]
+  #until board == ["X", "X", "X", "X", "X", "X", "X", "X", "X"]
+  9.times do
     turn(board)
   end
 end
