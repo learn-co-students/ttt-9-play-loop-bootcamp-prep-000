@@ -36,3 +36,19 @@ def turn(board)
 end
 
 # Define your play method below
+def play(board)
+  until board_full?(board)
+    turn(board)
+  end
+end
+
+def board_full?(board)
+  i = 0
+  while i<board.length
+    if board[i] == " " || board [i] == "" || board[i] == nil
+      return false
+    end
+    i += 1
+  end
+  return true
+end
