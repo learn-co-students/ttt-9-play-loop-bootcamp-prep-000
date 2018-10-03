@@ -1,10 +1,14 @@
 #!/usr/bin/env ruby
 
+# requires the lib file
 require_relative "../lib/play"
 
+# initialize starting board
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 
+# sequence of play
 puts "Welcome to Tic Tac Toe!"
-display_board(board)
+display_board(board) # empty starting board
 
 # Make sure to execute #play below
+play(board)
