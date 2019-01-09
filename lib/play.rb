@@ -42,9 +42,3 @@ def play(board)
   puts turn(board)
   end
 end
-  
-
-  
-  
-  
-  
