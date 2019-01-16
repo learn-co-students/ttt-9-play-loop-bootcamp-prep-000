@@ -15,6 +15,12 @@ def move(board, index, current_player = "X")
   board[index] = current_player
 end
 
+def play(board)
+  9.times do
+    turn(board)
+  end
+end
+
 def position_taken?(board, location)
   board[location] != " " && board[location] != ""
 end
