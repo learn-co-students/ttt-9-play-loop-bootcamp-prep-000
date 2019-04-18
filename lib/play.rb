@@ -36,3 +36,13 @@ def turn(board)
 end
 
 # Define your play method below
+
+def check_continue_play(board)
+  board.any? {|cell| cell.strip.empty?}
+end
+
+def play(board)
+  while check_continue_play(board)
+    turn(board)
+  end
+end
