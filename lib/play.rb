@@ -24,15 +24,33 @@ def valid_move?(board, index)
 end
 
 def turn(board)
+  moveCounter = 1
+
+  puts "Where would you like to go?"
   puts "Please enter 1-9:"
+
   input = gets.strip
   index = input_to_index(input)
-  if valid_move?(board, index)
-    move(board, index)
-    display_board(board)
+
+  if (valid_move?(board, index))
+    if (moveCounter.odd?)
+      move(board, index, "X")
+      display_board(board)
+    elsif (moveCounter.even?)
+      move(board, index, "O")
+      display_board(board)
+    end
+    moveCounter += 1
   else
+    puts "invalid"
     turn(board)
   end
 end
 
 # Define your play method below
+
+def play(board)
+  for turn in (0..8)
+    turn(board)
+  end
+end
