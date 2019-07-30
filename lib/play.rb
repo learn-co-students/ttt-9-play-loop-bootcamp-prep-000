@@ -35,8 +35,6 @@ def turn(board)
   end
 end
     
-def play
-  counter = 0
-  loop board[i] <= 9
-  print turn
+def play(board)
+  
 end
