@@ -35,4 +35,11 @@ def turn(board)
   end
 end
 
-# Define your play method below
+# Define your play method below remember 9 spots so max 9 turns to be played
+def play(board)
+  i = 0         # best to initialize variable to 0 
+  while i < 9   # this symbolizes the max 9 turns 
+    i += 1      # this increments by 1 
+    turn(board) # this calls the turn
+  end 
+end 
