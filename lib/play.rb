@@ -36,3 +36,12 @@ def turn(board)
 end
 
 # Define your play method below
+def play(board)
+    # chances = turn(board)
+    chances = 0
+  loop do
+    turn(board) 
+    chances += 1
+  break if chances == 9
+  end
+end
