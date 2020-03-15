@@ -1,3 +1,6 @@
+Judging from my last lab, I overthought that one pretty bad. This is so much simpler: 
+
+```ruby
 # Helper Methods
 def display_board(board)
   puts " #{board[0]} | #{board[1]} | #{board[2]} "
@@ -36,10 +39,4 @@ def turn(board)
 end
 
 # Define your play method below
-def play(board)
-  i = 1 
-  while i < 10 
-    turn(board)
-    i += 1
-  end 
-end 
+```
