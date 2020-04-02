@@ -39,12 +39,7 @@ end
 
 def play(board)
   counter = 0
-  loop do
-    counter += 1 
-    if counter >= 10
-      break
-    else
-      turn(board)
-    end
+  9.times do
+    turn(board)
   end
 end
