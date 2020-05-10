@@ -36,3 +36,15 @@ def turn(board)
 end
 
 # Define your play method below
+#* Accept an argument of a `board`.
+#* Start a loop and call `#turn`.
+
+def play(board)
+
+turnstaken = 0
+
+  until turnstaken == 9
+    turn(board)
+    turnstaken += 1
+  end
+end
