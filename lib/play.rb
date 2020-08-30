@@ -36,3 +36,12 @@ def turn(board)
 end
 
 # Define your play method below
+
+def play(board)
+ 9.times do
+   loop do
+    turn(board)
+  break
+end
+end
+end
