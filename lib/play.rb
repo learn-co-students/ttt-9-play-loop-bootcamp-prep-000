@@ -36,3 +36,15 @@ def turn(board)
 end
 
 # Define your play method below
+def play(board)
+  game_over = false
+  until game_over == true
+    turn(board)
+    game_over = true
+    for index in board do
+      if index == " " || index == ""
+       game_over = false
+      end
+    end
+  end
+end
